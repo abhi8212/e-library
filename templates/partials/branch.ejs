@@ -1,0 +1,42 @@
+<div id="navigation">
+    <img   id="logo" src="book_logo.png" alt="">
+    <div id="navitem">
+    <div id="nav">
+        <li> <i class="fa fa-home" aria-hidden="true"></i><a href="/" style="margin-right: 4px;">HOME</a>
+        </li>
+        <li><i class="fa fa-comment" aria-hidden="true"></i><a href="#">CONTACT US</a></li>
+        <li ><i class="fa fa-id-card-o" aria-hidden="true"></i><a href="#">CONTENTS</a></li>
+        <li><i class="fa fa-info-circle" aria-hidden="true"></i><a href="#">SERVICES</a></li>
+        <li><i class="fa fa-sign-in" aria-hidden="true"></i><a href="/login" style="margin-right: 4px;">LOGIN</a></li>
+        <li><i class="fa fa-user-circle-o" aria-hidden="true"></i><a href="#" style="margin-right: 4px;">USER</a></li>
+       
+    </div>
+</div>
+    <div id="hambarger" onclick="Show()">
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+    </div>
+    <button id="close" onclick="Hide()">&Cross;</button>
+</div>
+
+
+<script>
+    let navbar=document.getElementById("nav");
+    let closeButton=document.getElementById("close");
+    let hamBarger=document.getElementById("hambarger");
+let navigation=  document.getElementById("navigation")
+    const Hide=()=>{
+navbar.style.display="none";
+closeButton.style.display="none";
+hamBarger.style.display="block";
+navigation.style.flexDirection="row";
+
+    }
+    const Show=()=>{
+navbar.style.display="flex";
+closeButton.style.display="block";
+hamBarger.style.display="none";
+navigation.style.flexDirection="column";
+    }
+</script>

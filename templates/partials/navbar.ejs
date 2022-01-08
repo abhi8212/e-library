@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Navigation_Menu</title>
+    <link rel="stylesheet" href="nav_partial.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+  
+    <div class="blank">
+        
+    </div>
+    <div id="navigation">
+        <img   id="logo" src="book_logo.png" alt="">
+        <div id="navitem">
+        <div id="nav">
+            <li> <i class="fa fa-home" aria-hidden="true"></i><a href="/" style="margin-right: 4px;">HOME</a>
+            </li>
+            <li><i class="fa fa-comment" aria-hidden="true"></i><a href="/#contact">CONTACT US</a></li>
+            <li ><i class="fa fa-id-card-o" aria-hidden="true"></i><a href="/#box">CONTENTS</a></li>
+            <li><i class="fa fa-info-circle" aria-hidden="true"></i><a href="#">SERVICES</a></li>
+            <!-- <li><i class="fa fa-sign-in" aria-hidden="true"></i><a href="/login" style="margin-right: 4px;">LOGIN</a></li>
+                <li><i class="fa fa-sign-out" aria-hidden="true"></i><a href="/logout" style="margin-right: 4px;">LOGOUT</a></li> -->
+                <%if (!user) { %>
+                    <li><i class="fa fa-sign-in" aria-hidden="true"></i><a href="/login" style="margin-right: 4px;">LOGIN</a></li>
+                    <!-- <li><a href="/register">Sign Up</a></li> -->
+                    <% }else{ %>
+                        <form action="/logout?_method=DELETE" method="POST">
+                            <li><i class="fa fa-sign-out" aria-hidden="true"></i><a href="/logout" style="margin-right: 4px;">LOGOUT</a></li>
+                        </form>
+                        <%}%>
+            
+                <li><i class="fa fa-user-circle-o" aria-hidden="true"></i><a href="#" style="margin-right: 4px;"><%=user%></a></li>
+           
+            
+          
+          
+              
+               
+        </div>
+    </div>
+    
+        <div id="hambarger" onclick="Show()">
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+        </div>
+        <button id="close" onclick="Hide()">&Cross;</button>
+    </div>
+  
+    
+    
+  
+    <script>
+        let navbar=document.getElementById("nav");
+        let closeButton=document.getElementById("close");
+        let hamBarger=document.getElementById("hambarger");
+ let navigation=  document.getElementById("navigation")
+        const Hide=()=>{
+    navbar.style.display="none";
+closeButton.style.display="none";
+hamBarger.style.display="block";
+navigation.style.flexDirection="row";
+
+        }
+        const Show=()=>{
+    navbar.style.display="flex";
+    closeButton.style.display="block";
+    hamBarger.style.display="none";
+  navigation.style.flexDirection="column";
+        }
+    </script>
+</body>
+</html>

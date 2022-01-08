@@ -1,0 +1,213 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* navigation menu start here */
+.navbar
+{
+ 
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ position: sticky;
+ top: 0;
+ z-index: 2;
+ cursor: pointer;
+ /* background-color: rgb(207, 36, 36); */
+ background-color: black;
+
+ color: white;
+ /* height: 3rem; */
+}
+ a{
+    text-decoration: none;
+    color: white;
+}
+#box{
+    margin-top: 10px;
+    padding: 10px;
+}
+.logo{
+    width: 4rem;
+}
+.logo >img
+{
+    width: 4rem;
+}
+
+#search
+{
+    width: 9rem;
+    border-radius: 15px;
+    padding: 4px;
+}
+.btn{
+    width: 3rem;
+    /* background-color: red; */
+    background-color: black;
+
+  
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* hamberger css starts here */
+.burger{
+    width:2rem;
+    display: none;
+    cursor: pointer;
+
+}
+.line{
+    background-color: white;
+    height: 3px;
+    /* width: 3rem; */
+    margin: 5px 0px;
+}
+
+/* homepage css start here */
+
+.background
+{
+    background: rgba(0, 0, 0, 0.3) url(img/bg5.jpg);
+   /* background-image:  url(bg4.jpg); */
+   opacity: 0.7;
+    background-position:center;
+    background-size:cover;
+    background-blend-mode: darken;
+    background-repeat:no-repeat;
+    height: 30rem;
+    display: flex;
+
+}
+.main-box
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+   
+    font-weight: bold;
+    width: 35rem;
+    margin: auto;
+    padding: 10px;
+}
+
+.secondhalf
+ {
+    margin: auto;
+    width: 25%;
+}
+.secondhalf img
+{
+    width: 110%;
+    border-radius: 40%;
+}
+.home_btn{
+background-color: black;
+/* background-color: red; */
+padding: 5px;
+color: white;
+border-radius: 5px;
+margin: 10px;
+}
+          /* content start here */
+ #heading{
+        width: 25rem;
+      margin: 20px auto;
+              }
+          
+#content{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 250px;
+   width: 20%;
+   /* border: 2px solid red; */
+   border-radius: 10px;
+   margin: 10px;
+   padding: 0.9rem;
+   font-family: sans-serif;
+   background-color: #fff;
+   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+   position: relative; 
+z-index: 1;
+}
+.container:hover{
+     transform: scale(1.07);
+}
+
+/* inside conatainer i.e row css  */
+
+.row1{
+    /* background: linear-gradient(to right, #ff416c, #ff4b2b); */
+    background: linear-gradient(to right, #111111, #292828);
+    color: #fff;
+padding: 10px;
+margin-bottom: 15px;
+border-radius: 5px;
+font-size: 0.8rem;
+}
+.row3{
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    background: linear-gradient(to right, #2c2b2b, #161515);
+    padding: 10px 5px;
+    margin: 20px;
+    border-radius: 5px;
+}
+  
+ /* contact css begins here */
+  
+ #contact{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 10px 0px;
+     background-color: whitesmoke;
+ }
+ .form{
+     padding: 20px;
+ }
+ .input{
+     padding: 5px;
+     width: 25rem;
+     margin: 5px 0px;
+ }
+.btn-form{
+    width: 8rem;
+    margin-left: 9rem;
+    color: white;
+}
+ footer{
+    /* height: 20px; */
+    width: 20rem;
+    margin: 30px auto;
+ }
+  
+ @media screen and (max-width:900px) {
+     html{
+         font-size: 14px;
+     }
+ }
+ @media screen and (max-width:560px) {
+     html{
+         font-size: 10px;
+     }
+     #search_box{
+         display: none;
+     }
+     .item{
+         display: none;
+     }
+     .burger{
+         display: block;
+     }
+   
+ }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="style_register.css">
+</head>
+
+<body>
+    <%- include('../partials/navbar.ejs'); %>
+    <div class=sign-up-now>
+        <!-- <div class= transbox> -->
+        <form   action="/login" method="POST">
+            <h1>Login Here</h1>
+            <input type="text" class="input-box" placeholder="User name" required name="userlog" >
+            <br>
+            <input type="password" class="input-box"  placeholder="Password" required  name="passwordlog">
+            <br>
+            <input type="submit" class="input-box" value="Submit">
+        </form>
+        
+
+
+            <p style="font-size: 20px; "> Don`t have an account?
+                <a id="link"  href="register">&nbsp  Sign-Up-Here</a><br>
+                <a id="link"  href="register">Forget Password</a>
+
+            </p>
+
+        
+        <!-- </div> -->
+    </div>
+</body>
+
+</html>
