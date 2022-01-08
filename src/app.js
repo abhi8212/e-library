@@ -102,7 +102,7 @@ app.get("/register",(req,res) => {
     res.render("register")
 });
 
-app.get("/btech_first",auth,(req,res) => {
+app.get("/btech_first",(req,res) => {
     console.log(req.user.First);
     res.render("btech_first")
 });
