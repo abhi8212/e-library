@@ -13,6 +13,26 @@
     "nodemon": "^2.0.15",
     "path": "^0.12.7",
     "validator": "^13.7.0",
-    "start":"node src/app.js"
-  }
+    "start": "node src/app.js"
+  },
+  "name": "library_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhi8212/e-library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhi8212/e-library/issues"
+  },
+  "homepage": "https://github.com/abhi8212/e-library#readme",
+  "description": ""
 }
